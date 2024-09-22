@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wileyfox/porridge/full_porridge.mk)
+$(call inherit-product, device/GIONEE/gionee6735_65c_l1/full_gionee6735_65c_l1.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := cm_porridge
-BOARD_VENDOR := wileyfox
-PRODUCT_DEVICE := porridge
+PRODUCT_NAME := cm_gionee6735_65c_l1
+BOARD_VENDOR := GIONEE
+PRODUCT_DEVICE := gionee6735_65c_l1
 
-PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
+PRODUCT_GMS_CLIENTID_BASE := android-gionee
 
-PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Spark
+PRODUCT_MANUFACTURER := GIONEE
+PRODUCT_MODEL := F100
 
-PRODUCT_BRAND := Wileyfox
-TARGET_VENDOR := wileyfox
-TARGET_VENDOR_PRODUCT_NAME := Spark
-TARGET_VENDOR_DEVICE_NAME := porridge
+PRODUCT_BRAND := GIONEE
+TARGET_VENDOR := GIONEE
+TARGET_VENDOR_PRODUCT_NAME := GIONEE
+TARGET_VENDOR_DEVICE_NAME := gionee6735_65c_l1

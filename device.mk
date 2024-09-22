@@ -13,10 +13,10 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/wileyfox/porridge/porridge-vendor.mk
+VENDOR_BLOBS ?= vendor/GIONEE/gionee6735_65c_l1/gionee6735_65c_l1-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/wileyfox/porridge/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/GIONEE/gionee6735_65c_l1/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Charger and USB
@@ -29,7 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
-    $(LOCAL_PATH)/rootdir/fstab.porridge:root/fstab.porridge
+		$(LOCAL_PATH)/rootdir/fstab.gionee6735_65c_l1:root/fstab.gionee6735_65c_l1
 
 # Permissions
 PRODUCT_COPY_FILES += \

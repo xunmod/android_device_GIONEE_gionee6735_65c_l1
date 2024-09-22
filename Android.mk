@@ -15,6 +15,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq (,$(filter porridge porridgek3,$(TARGET_DEVICE)))
+ifneq (,$(filter gionee6735_65c_l1,$(TARGET_DEVICE)))
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
