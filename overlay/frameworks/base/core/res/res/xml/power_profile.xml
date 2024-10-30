@@ -18,50 +18,49 @@
 -->
 
 <device name="Android">
-  <item name="screen.on">110</item>
-  <item name="screen.full">290</item>
-  <item name="bluetooth.active">35</item>
-  <item name="bluetooth.on">0.1</item>
-  <item name="wifi.on">5</item>
-  <item name="wifi.active">125</item>
-  <item name="wifi.scan">30</item>
-  <item name="dsp.audio">30</item>
-  <item name="dsp.video">80</item>
-  <item name="camera.flashlight">200</item>
-  <item name="camera.avg">200</item>
-  <item name="radio.active">175</item>
-  <item name="radio.scanning">15</item>
-  <item name="gps.on">35</item>
+  <item name="screen.on">318.6</item>
+  <item name="screen.full">312</item>
+  <item name="bluetooth.active">108</item>
+  <item name="bluetooth.on">0.5</item>
+  <item name="bluetooth.at">1</item>
+  <item name="wifi.on">2.3</item>
+  <item name="wifi.active">96</item>
+  <item name="wifi.scan">100</item>
+  <item name="dsp.audio">100</item>
+  <item name="dsp.video">50</item>
+  <item name="radio.active">270</item>
+  <item name="radio.scanning">129</item>
+  <item name="gps.on">38.2</item>
   <array name="radio.on">
-      <value>2</value>
-      <value>1</value>
+      <value>5.1</value>
+      <value>3.9</value>
+      <value>4.1</value>
+      <value>3.7</value>
+      <value>4</value>
   </array>
 
   <array name="cpu.speeds">
-      <value>299000</value>
-      <value>442000</value>
-      <value>598000</value>
-      <value>819000</value>
-      <value>1040000</value>
-      <value>1170000</value>
-      <value>1235000</value>
-      <value>1300000</value>
-  </array>
-  <array name="cpu.active">
-      <value>80</value>
-      <value>100</value>
-      <value>130</value>
-      <value>150</value>
-      <value>180</value>
-      <value>195</value>
-      <value>225</value>
+      <value>400000</value>
   </array>
 
+  <array name="cpu.active">
+      <value>118.8</value>
+      <value>134.9</value>
+      <value>167.9</value>
+      <value>202.6</value>
+      <value>211.3</value>
+      <value>227.7</value>
+      <value>258.4</value>
+      <value>296.4</value>
+      <value>327.6</value>
+  </array>
+
+  <item name="cpu.awake">20.01</item>
   <!-- Current when CPU is idle -->
-  <item name="cpu.idle">3</item>
+  <item name="cpu.idle">2.8</item>
 
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
-  <item name="battery.capacity">2000</item>
+  <item name="battery.capacity">2400</item>
 
   <array name="wifi.batchedscan"> <!-- mA -->
       <value>.2</value> <!-- 1-8/hr -->
