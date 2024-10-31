@@ -1,5 +1,8 @@
 # Telephony
 bin/6620_launcher
+bin/atcid
+bin/atci_service
+bin/audiocmdservice_atci
 bin/ccci_fsd
 bin/ccci_mdinit
 bin/gsm0710muxd
@@ -7,24 +10,31 @@ bin/md_ctrl
 bin/mtkrild
 bin/muxreport
 bin/netdiag
+bin/permission_check
 bin/terservice
+bin/volte_imcb
+bin/volte_stack
+bin/volte_ua
 lib{,64}/libaed.so
 lib{,64}/libccci_util.so
 lib{,64}/libmdloggerrecycle.so
 lib/libmemoryDumpEncoder.so
-lib{,64}/libmrdump.so
+# lib{,64}/libmrdump.so
 lib{,64}/librilmtk.so
 lib64/libterservice.so
 lib{,64}/mtk-ril.so
 etc/ecc_list.xml
-etc/firmware/catcher_filter_1_lwg_n.bin
-etc/firmware/dsp_1_lwg_n.bin
-etc/firmware/dsp_1_lwg_n.bin_freeB28
-etc/firmware/modem_1_lwg_n.img
-etc/firmware/modem_1_lwg_n.img_freeB28
+etc/firmware/catcher_filter_1_ltg_1.bin
+etc/firmware/catcher_filter_1_ltg_2.bin
+etc/firmware/dsp_1_ltg_1.bin
+etc/firmware/dsp_1_ltg_2.bin
+etc/firmware/em_filter_1_ltg_1.bin
+etc/firmware/em_filter_1_ltg_2.bin
+etc/firmware/modem_1_ltg_1.img
+etc/firmware/modem_1_ltg_2.img
 
 # Sensors
-bin/af7133d
+# bin/af7133d
 bin/akmd09911
 bin/akmd8963
 bin/akmd8975
@@ -43,14 +53,16 @@ lib{,64}/hw/sensors.mt6735.so
 # GPS
 -app/YGPS/YGPS.apk
 bin/mtk_agpsd
-bin/slpd
+# bin/slpd
 bin/wifi2agps
 lib/libmnl.so
-lib{,64}/hw/gps.mt6735.so
+lib{,64}/hw/gps.default.so
 xbin/mnld
 
 # Power / Thermal
+bin/em_svr
 bin/fuelgauged
+bin/kpoc_charger
 bin/thermal_manager
 lib{,64}/libperfservicenative.so
 lib/libmtcloader.so
@@ -71,7 +83,7 @@ bin/pq
 lib{,64}/libblisrc32.so
 lib{,64}/libblisrc.so
 lib{,64}/libdpframework.so
-lib{,64}/libgas.so
+# lib{,64}/libgas.so
 lib{,64}/libged.so
 lib{,64}/libgralloc_extra.so
 lib{,64}/libgui_ext.so
@@ -79,19 +91,20 @@ lib{,64}/libgpu_aux.so
 lib{,64}/libion_mtk.so
 lib64/libpq_cust.so
 lib{,64}/libpq_prot.so
-lib{,64}/libpqservice.so
+# lib{,64}/libpqservice.so
 lib{,64}/libui_ext.so
 lib{,64}/hw/gralloc.mt6735.so
 lib{,64}/hw/hwcomposer.mt6735.so
 lib{,64}/egl/libGLES_mali.so
 
 # WIFI / BT / FM
+bin/mtkbt
 bin/wmt_loader
-lib{,64}/libbluetooth_mtk_pure.so
+# lib{,64}/libbluetooth_mtk_pure.so
 lib/libbluetooth_mtk.so
-lib/libbt-vendor.so
+# lib/libbt-vendor.so
 lib{,64}/libfmcust.so
-lib/hw/radio.fm.mt6735.so
+# lib/hw/radio.fm.mt6735.so
 etc/firmware/mt6627/mt6627_fm_v1_coeff.bin
 etc/firmware/mt6627/mt6627_fm_v1_patch.bin
 etc/firmware/mt6627/mt6627_fm_v2_coeff.bin
@@ -149,7 +162,7 @@ lib/libJpgDecPipe.so
 lib/libSwJpgCodec.so
 lib{,64}/libJpgEncPipe.so
 lib/libmhalImageCodec.so
-lib{,64}/libmtkcamera_client.so
+# lib{,64}/libmtkcamera_client.so
 lib{,64}/libmtkjpeg.so
 lib{,64}/libn3d3a.so
 lib{,64}/libSonyIMX230PdafLibrary.so
@@ -159,7 +172,7 @@ lib{,64}/hw/camera.mt6735.so
 lib{,64}/libaudiocompensationfilter.so
 lib{,64}/libaudiocomponentengine.so
 lib{,64}/libaudiocustparam.so
-lib{,64}/libaudiopolicymanagercustom.so
+# lib{,64}/libaudiopolicymanagercustom.so
 -lib{,64}/libaudiopolicymanager.so
 lib{,64}/libbessound_hd_mtk.so
 lib{,64}/libbwc.so
@@ -168,9 +181,9 @@ lib{,64}/libdrmmtkutil.so
 lib{,64}/libdrmmtkwhitelist.so
 lib/libHEVCdec_sa.ca7.android.so
 lib{,64}/libm4u.so
-lib{,64}/libmal.so
+# lib{,64}/libmal.so
 lib{,64}/libmatv_cust.so
-lib{,64}/libmdfx.so
+# lib{,64}/libmdfx.so
 lib{,64}/libmmprofile.so
 lib{,64}/libmmsdkservice.feature.so
 lib{,64}/libmmsdkservice.so
@@ -179,19 +192,20 @@ lib{,64}/libmsbc_mtk.so
 lib{,64}/libmtk_drvb.so
 lib{,64}/libmtk_mmutils.so
 lib{,64}/libMtkOmxCore.so
-lib/libMtkOmxVdecEx.so
+# lib/libMtkOmxVdecEx.so
 lib/libMtkOmxVenc.so
 lib{,64}/libmtkshifter.so
 lib{,64}/libspeech_enh_lib.so
 lib{,64}/libstagefrighthw.so
 lib/libvc1dec_sa.ca7.so
 lib{,64}/libvcodecdrv.so
-lib{,64}/libvcodec_oal.so
+# lib64/libvcodec_oal.so
+lib/libvcodec_oal.so
 lib{,64}/libvcodec_utility.so
 lib/libvp8dec_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
 lib{,64}/hw/audio.primary.mt6735.so
-etc/audio_param/AudioParamOptions.xml
+# etc/audio_param/AudioParamOptions.xml
 
 # Meta Mode
 bin/meta_tst
@@ -199,12 +213,13 @@ bin/meta_tst
 # Factory Mode
 bin/factory
 etc/factory.ini
-lib64/libminiui.so
+# lib64/libminiui.so
 lib64/libacdk.so
 res/sound/ringtone.wav
 
 # Misc
-lib{,64}/hw/lights.mt6735.so
+bin/ppl_agent
+lib{,64}/hw/lights.default.so
 lib{,64}/hw/memtrack.mt6735.so
 
 # MTKLogger
@@ -228,3 +243,16 @@ vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
+
+# Some other services not listed here, guessing unnecessary
+# Auto start ======
+# bin/MtkCodecService
+# bin/dm_agent_binder
+# bin/nvram_agent_binder
+# bin/nvram_backup_binder
+# bin/program_binary_service
+# bin/md_monitor
+# xbin/tunman
+# Manually start ======
+# dhcp6c
+# launchpppoe
