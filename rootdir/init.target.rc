@@ -11,13 +11,13 @@ on post-fs
     swapon_all /fstab.gionee6735_65c_l1
     write /proc/sys/vm/page-cluster 0
 
-# service audio-daemon /system/bin/audiocmdservice_atci
-#     class main
-#     socket atci-audio stream 660 media system
-#     user media
-#     group nvram media system sdcard_rw
-#     disabled
-#     oneshot
+service audio-daemon /system/bin/audiocmdservice_atci
+     class main
+     socket atci-audio stream 660 media system
+     user media
+     group nvram media system sdcard_rw
+     disabled
+     oneshot
 
 on boot
 
@@ -63,6 +63,7 @@ service emsvr /system/bin/em_svr
 service kpoc_charger /system/bin/kpoc_charger
     class charger
 
+start audio-daemon
 start atci_service
 
 on property:ro.build.type=eng
@@ -168,9 +169,14 @@ on post-fs-data
     mknod /dev/devmap c 196 0
     chmod 0440 /dev/devmap
     chown root system /dev/devmap
-
  
 service MtkCodecService /system/bin/MtkCodecService
     class main
     user system
     group audio media sdcard_r
+
+# GuiExt Server init
+service guiext-server /system/bin/guiext-server
+    class main
+    user system
+    group system graphics
