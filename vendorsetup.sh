@@ -1,3 +1,3 @@
-add_lunch_combo cm_gionee6735_65c_l1-user
-add_lunch_combo cm_gionee6735_65c_l1-userdebug
-add_lunch_combo cm_gionee6735_65c_l1-eng
+add_lunch_combo lineage_gionee6735_65c_l1-user
+add_lunch_combo lineage_gionee6735_65c_l1-userdebug
+add_lunch_combo lineage_gionee6735_65c_l1-eng
