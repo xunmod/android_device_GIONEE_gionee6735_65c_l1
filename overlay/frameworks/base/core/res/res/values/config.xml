@@ -79,7 +79,6 @@
     <color name="config_defaultNotificationColor">#ff00ff00</color>
 
 
-    <string name="config_useragentprofile_url" translatable="false" />
     <string name="config_mms_user_agent">Android-Mms/0.1</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 

@@ -169,6 +169,7 @@ lib{,64}/libSonyIMX230PdafLibrary.so
 lib{,64}/hw/camera.mt6735.so
 
 # Media
+bin/MtkCodecService
 lib{,64}/libaudiocompensationfilter.so
 lib{,64}/libaudiocomponentengine.so
 lib{,64}/libaudiocustparam.so
@@ -246,7 +247,6 @@ vendor/lib/mediadrm/libwvdrmengine.so
 
 # Some other services not listed here, guessing unnecessary
 # Auto start ======
-# bin/MtkCodecService
 # bin/dm_agent_binder
 # bin/nvram_agent_binder
 # bin/nvram_backup_binder
