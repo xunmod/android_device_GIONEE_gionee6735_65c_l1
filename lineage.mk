@@ -17,7 +17,7 @@ $(call inherit-product, device/GIONEE/gionee6735_65c_l1/full_gionee6735_65c_l1.m
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := cm_gionee6735_65c_l1
+PRODUCT_NAME := lineage_gionee6735_65c_l1
 BOARD_VENDOR := GIONEE
 PRODUCT_DEVICE := gionee6735_65c_l1
 
