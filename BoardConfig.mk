@@ -44,3 +44,9 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/platform/tp_wake_switch/double_wake 
+
+# Seccomp filter
+BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
+
+undefine MALLOC_IMPL
+MALLOC_SVELTE := true
